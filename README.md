@@ -18,7 +18,9 @@ The usage is as simple as providing a canvas element and a text that should be u
 ```
 
 **HTML**
-```<canvas id="barcode" ></canvas>```
+```
+<canvas id="barcode" ></canvas>
+```
 
 **JS**
 ```
