@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+## Welcome to PDF417 HUB3 Barcode Generator page
 
-You can use the [editor on GitHub](https://github.com/qaap/pdf417-generator/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+This library provides you with the ability to generate PDF417 HUB3 Barcode that is drawn into a canvas element and can be used for many different use cases. The code is based on the [bcmath-js](https://sourceforge.net/projects/bcmath-js) and [pdf417-js](https://github.com/bkuzmic/pdf417-js).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Browser
 
-### Markdown
+You can find complete example at [examples/browser].
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The usage is as simple as providing a canvas element and a text that should be used for barcode generation:
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+<script src="https://cdn.rawgit.com/qaap/pdf417-generator/master/lib/libbcmath.js" type="text/javascript"></script>
+<script src="https://cdn.rawgit.com/qaap/pdf417-generator/master/lib/bcmath.js" type="text/javascript"></script>
+<script src="https://cdn.rawgit.com/qaap/pdf417-generator/master/lib/pdf417.js" type="text/javascript"></script>
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**HTML**
+```<canvas id="barcode" ></canvas>```
 
-### Jekyll Themes
+**JS**
+```
+var code = "HRVHUB30\nHRK\n" +                                                                                   
+"000000000012355\n"+
+"PETAR KORETIĆ\n"+
+"PREVOJ DD\n"+
+"10000 Zagreb\n"+
+"QAAP J.D.O.O\n"+
+"PREVOJ DD\n"+
+"10000 ZAGREB\n"+
+"HR5041240000000000\n"+
+"HR01\n"+
+"7336-68949637625-00001\n"+
+"COST\n"+
+"Uplata za 1. mjesec\n";
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/qaap/pdf417-generator/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+var canvas = document.getElementById("barcode")
+PDF417.draw(code, canvas)
 
-### Support or Contact
+```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Support 
+
+You can always open a new issue or [contact support](https://qaap.io) and we’ll help you sort it out.
