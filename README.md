@@ -1,10 +1,13 @@
-## Welcome to PDF417 HUB3 Barcode Generator page
+## PDF417 HUB3 Barcode Generator
 
-This library provides you with the ability to generate PDF417 HUB3 Barcode that is drawn into a canvas element and can be used for many different use cases. The code is based on the [bcmath-js](https://sourceforge.net/projects/bcmath-js) and [pdf417-js](https://github.com/bkuzmic/pdf417-js).
+This library provides you with the ability to generate PDF417 HUB3 Barcode in browser or Node.js
+apps. The final barcode is drawn into a canvas element and can be used for many different use cases.
+The code is based on the [bcmath-js](https://sourceforge.net/projects/bcmath-js) and
+[pdf417-js](https://github.com/bkuzmic/pdf417-js).
 
 ### Browser
 
-You can find complete example at [examples/browser].
+You can find a complete example at [examples/browser](examples/browser).
 
 The usage is as simple as providing a canvas element and a text that should be used for barcode generation:
 
@@ -19,7 +22,7 @@ The usage is as simple as providing a canvas element and a text that should be u
 
 **JS**
 ```
-var code = "HRVHUB30\nHRK\n" +                                                                                   
+var code = "HRVHUB30\nHRK\n" +
 "000000000012355\n"+
 "PETAR KORETIĆ\n"+
 "PREVOJ DD\n"+
@@ -38,6 +41,6 @@ PDF417.draw(code, canvas)
 
 ```
 
-### Support 
+### Support
 
-You can always open a new issue or [contact support](https://qaap.io) and we’ll help you sort it out.
+You can always open a new issue or [contact us](https://qaap.io) and we’ll help you sort it out.
