@@ -1,5 +1,5 @@
-const Canvas = require('canvas')
-const PDF417 = require("../../lib/pdf417")
+const Canvas = require("canvas")
+const PDF417 = require("pdf417-generator")
 
 const code = "HRVHUB30\nHRK\n" +
     "000000000012355\n"+

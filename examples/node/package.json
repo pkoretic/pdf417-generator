@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/qaap/pdf417-generator#readme",
   "dependencies": {
-    "canvas": "^1.6.10"
+    "canvas": "^1.6.10",
+    "pdf417-generator": "^1.0.0"
   }
 }
