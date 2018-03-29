@@ -1,5 +1,4 @@
 const Canvas = require('canvas')
-const Image = Canvas.Image
 const PDF417 = require("../../lib/pdf417")
 
 const code = "HRVHUB30\nHRK\n" +
