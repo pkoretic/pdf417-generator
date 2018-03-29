@@ -47,6 +47,8 @@ PDF417.draw(code, canvas)
 
 You can find a complete example at [examples/node](examples/node).
 
+The [node-canvas](https://github.com/Automattic/node-canvas) library is used for drawing.
+
 Install the library:
 
 ```
