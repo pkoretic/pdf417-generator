@@ -7,7 +7,7 @@ The code is based on the [bcmath-js](https://sourceforge.net/projects/bcmath-js)
 
 ### Browser
 
-You can find a complete example at [examples/browser](examples/browser).
+You can find a complete example at [examples/browser](examples/browser) and a running demo [here](https://qaap.github.io/pdf417-generator).
 
 The usage is as simple as providing a canvas element and a text that should be used for barcode generation:
 
