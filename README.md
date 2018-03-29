@@ -82,4 +82,4 @@ console.log('<img src="' + canvas.toDataURL() + '" />')
 
 ### Support
 
-You can always open a new issue or [contact us](https://qaap.io) and we’ll help you sort it out.
+You can always open a new issue or [contact us](http://qaap.io) and we’ll help you sort it out.
