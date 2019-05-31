@@ -1,6 +1,6 @@
 {
   "name": "pdf417-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PDF417 HUB3 2D barcode generator for browser and Node",
   "main": "lib/pdf417.js",
   "directories": {
