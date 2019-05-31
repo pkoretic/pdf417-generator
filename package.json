@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qaap/pdf417-generator.git"
+    "url": "git+https://github.com/pkoretic/pdf417-generator.git"
   },
   "keywords": [
     "pdf417",
@@ -23,7 +23,7 @@
   "author": "Petar Koretic",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/qaap/pdf417-generator/issues"
+    "url": "https://github.com/pkoretic/pdf417-generator/issues"
   },
-  "homepage": "https://github.com/qaap/pdf417-generator#readme"
+  "homepage": "https://github.com/pkoretic/pdf417-generator#readme"
 }

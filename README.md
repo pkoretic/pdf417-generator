@@ -7,14 +7,14 @@ The code is based on the [bcmath-js](https://sourceforge.net/projects/bcmath-js)
 
 ### Browser
 
-You can find a complete example at [examples/browser](examples/browser) and a running demo [here](https://qaap.github.io/pdf417-generator).
+You can find a complete example at [examples/browser](examples/browser) and a running demo [here](https://pkoretic.github.io/pdf417-generator).
 
 The usage is as simple as providing a canvas element and a text that should be used for barcode generation:
 
 ```
-<script src="https://cdn.rawgit.com/qaap/pdf417-generator/master/lib/libbcmath.js" type="text/javascript"></script>
-<script src="https://cdn.rawgit.com/qaap/pdf417-generator/master/lib/bcmath.js" type="text/javascript"></script>
-<script src="https://cdn.rawgit.com/qaap/pdf417-generator/master/lib/pdf417.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/pkoretic/pdf417-generator@master/lib/libbcmath.js " type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/pkoretic/pdf417-generator@master/lib/bcmath.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/pkoretic/pdf417-generator@master/lib/pdf417.js" type="text/javascript"></script>
 ```
 
 **HTML**
@@ -29,7 +29,7 @@ var code = "HRVHUB30\nHRK\n" +
 "PETAR KORETIĆ\n"+
 "PREVOJ DD\n"+
 "10000 Zagreb\n"+
-"QAAP J.D.O.O\n"+
+"pkoretic J.D.O.O\n"+
 "PREVOJ DD\n"+
 "10000 ZAGREB\n"+
 "HR5041240000000000\n"+
@@ -68,7 +68,7 @@ HRK
 PETAR KORETIĆ
 PREVOJ DD
 10000 Zagreb
-QAAP J.D.O.O
+FIRMA J.D.O.O
 PREVOJ DD
 10000 ZAGREB
 HR5041240000000000
@@ -83,7 +83,3 @@ PDF417.draw(code, canvas)
 // create an image which can be sent in an e-mail or similar
 console.log(`<img src="${canvas.toDataURL()}" />`)
 ```
-
-### Support
-
-You can always open a new issue or [contact us](http://qaap.io) and we’ll help you sort it out.
