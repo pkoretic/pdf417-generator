@@ -12,9 +12,10 @@ You can find a complete example at [examples/browser](examples/browser) and a ru
 The usage is as simple as providing a canvas element and a text that should be used for barcode generation:
 
 ```
-<script src="https://cdn.jsdelivr.net/gh/pkoretic/pdf417-generator@master/lib/libbcmath.js " type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/pkoretic/pdf417-generator@master/lib/libbcmath.js" type="text/javascript"></script>
 <script src="https://cdn.jsdelivr.net/gh/pkoretic/pdf417-generator@master/lib/bcmath.js" type="text/javascript"></script>
 <script src="https://cdn.jsdelivr.net/gh/pkoretic/pdf417-generator@master/lib/pdf417.js" type="text/javascript"></script>
+
 ```
 
 **HTML**
