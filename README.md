@@ -4,9 +4,9 @@ margin-bottom: 50px">
     <canvas id="barcode" ></canvas>
 <div>
 
-<script src="https://cdn.rawgit.com/qaap/pdf417-generator/master/lib/libbcmath.js" type="text/javascript"></script>
-<script src="https://cdn.rawgit.com/qaap/pdf417-generator/master/lib/bcmath.js" type="text/javascript"></script>
-<script src="https://cdn.rawgit.com/qaap/pdf417-generator/master/lib/pdf417.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/pkoretic/pdf417-generator@master/lib/libbcmath.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/pkoretic/pdf417-generator@master/lib/bcmath.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/pkoretic/pdf417-generator@master/lib/pdf417.js" type="text/javascript"></script>
 <script type="text/javascript">
 
 window.onload = function()
