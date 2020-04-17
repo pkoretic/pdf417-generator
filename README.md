@@ -1,6 +1,11 @@
 <div style="display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap;
 margin-bottom: 50px">
-    <textarea id="code" cols="30" rows="15" oninput="generate()" onchange="generate"></textarea>
+    <div>
+        <textarea id="code" cols="30" rows="15" oninput="generate()" onchange="generate" style="display: block"></textarea>
+        <label>Aspect Ratio
+            <input id="aspectratio" type="number" oninput="generate()" onchange="generate"  style="display: block">
+        </label>
+    </div>
     <canvas id="barcode" ></canvas>
 <div>
 
@@ -26,13 +31,15 @@ window.onload = function()
         "Uplata za 1. mjesec\n";
 
     document.getElementById("code").value = code
+    document.getElementById("aspectratio").value = 2
     generate()
 }
 
 function generate()
 {
     var code = document.getElementById("code").value
+    var aspectratio = Number(document.getElementById("aspectratio").value)
     var canvas = document.getElementById("barcode")
-    PDF417.draw(code, canvas)
+    PDF417.draw(code, canvas, aspectratio)
 }
 </script>
