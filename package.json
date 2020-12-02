@@ -8,7 +8,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "publish": "npm publish dist/ --access public"
   },
   "repository": {
     "type": "git",
@@ -25,5 +27,10 @@
   "bugs": {
     "url": "https://github.com/pkoretic/pdf417-generator/issues"
   },
-  "homepage": "https://github.com/pkoretic/pdf417-generator#readme"
+  "homepage": "https://github.com/pkoretic/pdf417-generator#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^6.3.2",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0"
+  }
 }
