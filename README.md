@@ -5,6 +5,7 @@ apps. The final barcode is drawn into a canvas element and can be used for many 
 The code is based on the [bcmath-js](https://sourceforge.net/projects/bcmath-js) and
 [pdf417-js](https://github.com/bkuzmic/pdf417-js).
 
+
 ### Browser
 
 You can find a complete example at [examples/browser](examples/browser) and a running demo [here](https://pkoretic.github.io/pdf417-generator).
@@ -84,6 +85,15 @@ PDF417.draw(code, canvas)
 // create an image which can be sent in an e-mail or similar
 console.log(`<img src="${canvas.toDataURL()}" />`)
 ```
+
+
+### TypeScript
+```
+import * as PDF417 from 'pdf417-generator';
+
+PDF417.draw(code, canvas);
+```
+
 
 ### draw arguments
 
