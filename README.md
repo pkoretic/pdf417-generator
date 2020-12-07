@@ -98,7 +98,11 @@ PDF417.draw(code, canvas);
 ### draw arguments
 
 **code** - (string) code to represent using PDF417
+
 **canvas** - (Canvas) Canvas instance
+
 **aspectRatio** - (float) the width to height of the symbol (excluding quiet zones); default 2
+
 **ecl** - (int) error correction level (0-8); default -1 = automatic correction level
+
 **devicePixelRatio** (int) determine how much extra pixel density should be added to allow for a sharper image; default window.devicePixelRatio if available
