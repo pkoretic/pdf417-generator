@@ -14,20 +14,19 @@ margin-bottom: 50px">
 
 window.onload = function()
 {
-    var code = HUB3.format({
-        amount:        123.55,
-        payerName:     "PETAR KORETIĆ",
-        payerAddress:  "PREVOJ DD",
-        payerCity:     "10000 Zagreb",
-        recipientName: "FIRMA J.D.O.O",
-        recipientAddr: "PREVOJ DD",
-        recipientCity: "10000 ZAGREB",
-        iban:          "HR1210010051863000160",
-        model:         "HR01",
-        callNumber:    "7336-68949637625-00001",
-        purposeCode:   "COST",
-        description:   "Uplata za 1. mjesec"
-    })
+    var code = "HRVHUB30\nEUR\n" +
+        "000000000012355\n" +
+        "PETAR KORETIĆ\n" +
+        "PREVOJ DD\n" +
+        "10000 Zagreb\n" +
+        "FIRMA J.D.O.O\n" +
+        "PREVOJ DD\n" +
+        "10000 ZAGREB\n" +
+        "HR1210010051863000160\n" +
+        "HR01\n" +
+        "7336-68949637625-00001\n" +
+        "COST\n" +
+        "Uplata za 1. mjesec\n";
 
     document.getElementById("code").value = code
     document.getElementById("aspectratio").value = 2
