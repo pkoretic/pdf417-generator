@@ -8,3 +8,15 @@ body {
     align-items: center;
     flex-wrap: wrap
 }
+
+#barcode-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+button {
+    padding: 8px 20px;
+    cursor: pointer;
+}

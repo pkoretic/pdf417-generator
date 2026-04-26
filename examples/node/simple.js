@@ -1,24 +1,28 @@
-const Canvas = require("canvas")
+const { createCanvas } = require("canvas")
 const PDF417 = require("pdf417-generator")
+const HUB3 = require("../../lib/hub3")
+const fs = require("fs")
 
-const code =
-`HRVHUB30
-HRK
-000000000012355
-PETAR KORETIĆ
-PREVOJ DD
-10000 Zagreb
-QAAP J.D.O.O
-PREVOJ DD
-10000 ZAGREB
-HR5041240000000000
-HR01
-7336-68949637625-00001
-COST
-Uplata za 1. mjesec`
+const code = HUB3.format({
+    amount:        123.55,
+    payerName:     "PETAR KORETIĆ",
+    payerAddress:  "PREVOJ DD",
+    payerCity:     "10000 Zagreb",
+    recipientName: "FIRMA J.D.O.O",
+    recipientAddr: "PREVOJ DD",
+    recipientCity: "10000 ZAGREB",
+    iban:          "HR5041240000000000000",
+    model:         "HR01",
+    callNumber:    "7336-68949637625-00001",
+    purposeCode:   "COST",
+    description:   "Uplata za 1. mjesec"
+})
 
-let canvas = new Canvas()
+let canvas = createCanvas(1, 1)
 PDF417.draw(code, canvas)
 
 // create image which can be sent in an e-mail or similar
 console.log(`<img src="${canvas.toDataURL()}" />`)
+
+// save as PNG file
+fs.writeFileSync("barcode.png", canvas.toBuffer("image/png"))

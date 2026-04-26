@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/pkoretic/pdf417-generator#readme",
   "dependencies": {
-    "canvas": "^1.6.10",
+    "canvas": "^3.2.3",
     "pdf417-generator": "^1.0.0"
   }
 }
