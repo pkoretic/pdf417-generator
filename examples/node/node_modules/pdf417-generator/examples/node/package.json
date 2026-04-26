@@ -1,0 +1,28 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "pdf417 generator examples",
+  "main": "simple.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qaap/pdf417-generator.git"
+  },
+  "keywords": [
+    "pdf417",
+    "hub3",
+    "2d",
+    "barcode"
+  ],
+  "author": "Petar Koretic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qaap/pdf417-generator/issues"
+  },
+  "homepage": "https://github.com/qaap/pdf417-generator#readme",
+  "dependencies": {
+    "canvas": "^1.6.10"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "pdf417-generator",
+  "version": "1.0.0",
+  "description": "PDF417 HUB3 2D barcode generator for browser and Node",
+  "main": "lib/pdf417.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qaap/pdf417-generator.git"
+  },
+  "keywords": [
+    "pdf417",
+    "hub3",
+    "barcode",
+    "generator"
+  ],
+  "author": "Petar Koretic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qaap/pdf417-generator/issues"
+  },
+  "homepage": "https://github.com/qaap/pdf417-generator#readme"
+}
