@@ -1,6 +1,5 @@
 const { createCanvas } = require("canvas")
-const PDF417 = require("pdf417-generator")
-const HUB3 = require("../../lib/hub3")
+const { PDF417, HUB3 } = require("../../lib/pdf417")
 const fs = require("fs")
 
 const code = HUB3.format({
