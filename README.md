@@ -2,9 +2,7 @@
 margin-bottom: 50px">
     <div>
         <textarea id="code" cols="30" rows="15" oninput="generate()" onchange="generate" style="display: block"></textarea>
-        <label>Aspect Ratio
-            <input id="aspectratio" type="number" oninput="generate()" onchange="generate"  style="display: block">
-        </label>
+        <label style="display: block; margin-top: 6px">Aspect Ratio &nbsp; 1 : <input id="aspectratio" type="number" oninput="generate()" onchange="generate" style="width: 4em"></label>
     </div>
     <canvas id="barcode" ></canvas>
 <div>
